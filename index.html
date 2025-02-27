@@ -316,7 +316,7 @@
                       the model has less flexibility to compensate for mistimed keyframe inputs. The result from standard motion-inbetweening solutions is output that may feature unrealistic dynamics 
                       (the character moves from one keyframe to another too fast) or fail to hit keyframes (the character does not have enough time to reach the next keyframe).
                       <br><br>
-                    <p> <b>Why not learn the retiming function separately from spatial details? </b></p>
+                    <p> <b>Why not learn the retiming function and spatial details with two separate models? </b></p>
                     One alternative model architecture is to learn a time-warping function separately from spatial details. For example, a model could learn a timewarping function that warps the input keyframes to match the ground truth motion. 
                     The retimed keyframes could then be used to generate motion using a standard motion-inbetweening model.
                     
@@ -329,7 +329,7 @@
 
                      Unfortunately, using prior learned interpolation techniques on imprecisely timed keyframes can often results in motion that lacks accurate spatial detail, which is hard to recover through manual retiming. This limitation underscores the need for an integrated approach. 
                      <br><br>
-                     <p> <b>Where does this fit in the context of generative motion generation, like text-to-motion?</b></p>
+                     <p> <b>Where does this fit in the context of other forms of conditioned generative motion generation, like text-to-motion?</b></p>
                      We believe that the ideal future motion editing system should be multimodal, incorporating both text and kinematic joint constraints (and image/video-based demonstration, and scene-specific details, and more). Each modality offers unique advantages: text is highly accessible but can be ambiguous, 
                      while kinematic joint constraints allow for greater control but can be challenging to articulate. 
                      We believe a multimodal system that combined both would get the best of both worlds: using text to express high-level intent and kinematic constraints
