@@ -274,13 +274,13 @@
     <div style="background-color: rgb(255, 255, 255); padding-top: 30px; " >
             <div class="video-row">
                 <div class="col" style="padding-left:30%; display:grid;">
-                    Given an original motion of a person walking in a crouched manner we want the character to walk farther but in the same crocuhed style.
+                    1) Given an original motion of a person walking in a crouched manner we want the character to walk farther but in the same crocuhed style.
                     <video class="specialvideo video lazy img-fluid" muted loop playsinline controls style="width:100%">
                         <source src="./assets/video/results/edit_original.mp4" type="video/mp4"></source>
                     </video>
                 </div>
                 <div class="col" style="padding-right:20%; display:grid;">
-                    We sample 4 keyframes from the original motion and space them out further apart.
+                    2) We sample 4 keyframes from the original motion and space them out further apart.
                     <video class="specialvideo video lazy img-fluid" muted loop playsinline controls style="width:100%">
                         <source src="./assets/video/results/edit_keyfs.mp4" type="video/mp4"></source>
                     </video>
@@ -288,13 +288,13 @@
             </div>
             <div class="video-row">
                 <div class="col" style="padding-left:30%; display:grid;">
-                    A model which treats the timing of input keyframes as a hard constraint reacts to the imprecisely timed middle keyposes by generating motion with an uneven gait
+                    3) A model which treats the timing of input keyframes as a hard constraint reacts to the imprecisely timed middle keyposes by generating motion with an uneven gait
                     <video class="specialvideo video lazy img-fluid" muted loop playsinline controls style="width:100%">
                         <source src="./assets/video/results/edit_condmdi.mp4" type="video/mp4"></source>
                     </video>
                 </div>
                 <div class="col" style="padding-right:20%; display:grid;">
-                    Given the input keyposes, our model generates a new motion (bottom, right) that is similar to the original motion, but walks farther.
+                    4) Given the input keyposes, our model generates a new motion (bottom, right) that is similar to the original motion, but walks farther.
                     <video class="specialvideo video lazy img-fluid" muted loop playsinline controls style="width:100%">
                         <source src="./assets/video/results/edit_ours.mp4" type="video/mp4"></source>
                     </video>
